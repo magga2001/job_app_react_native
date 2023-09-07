@@ -15,7 +15,9 @@ import PopularJobCard from "../../common/cards/popular/PopularJobCard";
 
 const Popularjobs = () => {
   const router = useRouter();
+  // While the screen is still loading
   const isLoading = false;
+  // To see if there is any error
   const error = false;
   return (
     <View style={styles.container}>
@@ -26,6 +28,7 @@ const Popularjobs = () => {
         </TouchableOpacity>
       </View>
       <View style={styles.cardsContainer}>
+        {/* Dynamic code to either display loading circle, error, or flat list of popular job card */}
         {isLoading ? (
           <ActivityIndicator size="large" colors={COLORS.primary} />
         ) : error ? (
