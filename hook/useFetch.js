@@ -12,7 +12,7 @@ const useFetch = (endpoint, query) => {
       "X-RapidAPI-Key": "6e42759384msh4bd2565a8c9c040p12a0aejsn60eba7b98c89",
       "X-RapidAPI-Host": "jsearch.p.rapidapi.com",
     },
-    url: `https://jsearch.p.rapidapi.com/search/${endpoint}`,
+    url: `https://jsearch.p.rapidapi.com/${endpoint}`,
     // an object where we spread the query that is pass into this param
     params: { ...query },
   };
